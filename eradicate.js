@@ -133,7 +133,7 @@ quoteText = $("<p>“"+selectedQuote.quote+"”</p>")
     .addClass('nfe-quote-text')
     .appendTo(quoteDiv);
 
-quoteSource = $("<p>~ "+selectedQuote.source+"</p>")
+quoteSource = $("<p>-- "+selectedQuote.source+"</p>")
     .addClass('nfe-quote-source')
     .appendTo(quoteDiv);
 

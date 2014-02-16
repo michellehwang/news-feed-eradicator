@@ -1,7 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400);
+
 .nfe-quote
 {
     font-size: 24px;
 }
+
 
 .nfe-quote-text
 {
@@ -9,10 +12,13 @@
     border-left: 4px solid #99f;
     margin-left: 15px;
     padding-left: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nfe-quote-source
 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-variant: italic;
     color: #999;
 }
 
@@ -51,6 +57,12 @@
 #pagelet_home_stream, div[id^='topnews_main_stream']
 {
 	display: none !important;
+}
+
+/* This hides the trending news topics before the JS kicks in */
+#pagelet_blue_bar, div[id^='pagelet_trending_tags_and_topics']
+{
+    display: none !important;
 }
 
 div.ticker_stream
