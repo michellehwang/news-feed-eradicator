@@ -136,17 +136,9 @@ quoteText = $("<p>“"+selectedQuote.quote+"”</p>")
     .addClass('nfe-quote-text')
     .appendTo(quoteDiv);
 
-quoteSource = $("<p>~ "+selectedQuote.source+"</p>")
+quoteSource = $("<p>-- "+selectedQuote.source+"</p>")
     .addClass('nfe-quote-source')
     .appendTo(quoteDiv);
-
-fbLink = $("<a href='javascript:;'>News Feed Eradicator</a>")
-    .addClass('nfe-info-link')
-    .on('click', function(){
-        infoPanel.load(chrome.extension.getURL("info-panel.html"));
-        infoPanel.show();
-    })
-	.appendTo(quoteDiv);
 
 // This delay ensures that the elements have been created by Facebook's
 // scripts before we attempt to replace them
